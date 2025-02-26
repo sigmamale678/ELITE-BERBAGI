@@ -1,225 +1,98 @@
-/* Resetting default margins and paddings */
+/* Reset margin dan padding */
 * {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body styling */
+/* Atur tampilan body */
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     text-align: center;
     font-family: 'Hammersmith One', sans-serif;
     color: #fff;
     line-height: 1.6;
     animation: fadeIn 1s ease-in;
+    background-image: url(./assets/wallpaperterbaru.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Hindari scroll horizontal */
 }
 
-/* Heading animations */
-h2, h3 {
-    opacity: 0;
-    animation: slideIn 1s forwards;
-}
-
-h2:nth-of-type(1) {
-    animation-delay: 0.5s;
-}
-
-h3 {
-    animation-delay: 1s;
-}
-
-/* Image animations */
-img {
-    width: 410px;
-    opacity: 0;
-    animation: bounceIn 1s forwards;
-    animation-delay: 1.5 s;
-}
-
-/* Paragraph animations */
-p {
-    opacity: 0;
-    animation: fadeInUp 2s forwards;
-    text-justify: inter-word;
-}
-
-/* Keyframe animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes bounceIn {
-    from { transform: scale(0); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* QR Code styling */
-.qr-code {
-    width: 70%;
-    max-width: 300px;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-    border: 5px solid #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    background-color: #333;
-}
-
-/* Mobile view styling */
-@media (max-width: 767px) {
-    .qr-code {
-        width: 80%;
-        max-width: 250px;
-    }
-}
-
-/* Modal styling */
-body.modal-open {
-    overflow: hidden !important;
-    padding-right: 0 !important;
-}
-
-.modal-dialog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Pastikan semua elemen berada di tengah */
+.container {
+    width: 90%;
+    max-width: 800px;
     margin: auto;
-    max-width: 90%;
 }
 
+/* Pastikan gambar tidak terlalu besar */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Responsif untuk tombol */
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* Atur tampilan untuk modal agar tetap proporsional */
 .modal-content {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+}
+
+/* Responsif untuk carousel */
+.carousel {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Footer & teks berjalan */
+footer {
+    width: 100%;
     text-align: center;
-    border-radius: 8px;
+    padding: 10px;
 }
 
-/* Responsive modal for mobile */
-@media (max-width: 480px) {
-    .modal-dialog {
-        width: 90% !important;
-        max-width: 90% !important;
-        margin: 0 auto !important;
-    }
-
-    .modal-content {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-    }
-}
-
-/* Button styling */
-#clickButton {
-    position: relative;
-    z-index: 2;
-}
-
-#floatingVideo {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-    max-width: 300px;
-    z-index: 3;
-    pointer-events: none;
-}
-
-/* Responsive video */
-@media (max-width: 768px) {
-    #floatingVideo {
-        width: 50vw;
-        max-width: 250px;
-        top: 64%;
-    }
-}
-
-@media (max-width: 480px) {
-    #floatingVideo {
-        width: 60vw;
-        max-width: 200px;
-        top: 70%;
-    }
-}
-
-/* Back button styling */
-.back-button {
+/* Pastikan ikon audio dan tombol share tetap di tempat */
+#mute-icon, .back-button {
     position: fixed;
     bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
     z-index: 9999;
-    text-decoration: none;
-    color: #fff;
-    transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.1);
+.back-button {
+    left: 20px;
 }
 
-/* Marquee container */
-.marquee-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    background: linear-gradient(90deg, #ff9800, #ff5722);
-    padding: 5px 0;
-    white-space: nowrap;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Marquee text */
-.marquee-text {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-}
-
-      /* Menjaga aspek rasio 16:9 untuk semua gambar */
-      .carousel-inner .carousel-item img {
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-      }
-
-
-      #countdown {
-        font-family: 'Bebas Neue', sans-serif;
-        text-align: center;
+/* Media query untuk menyesuaikan tampilan di mobile */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: contain;
     }
-    #countdown h2 {
-        font-size: 50px;
-        margin: 0;
-        line-height: 1.2;
-        color: #FF6F00;
+    h2, h3 {
+        font-size: 1.5rem;
     }
-    #countdown p {
-        font-size: 24px;
-        margin-top: 5px;
-        color: #212121;
+    p {
+        font-size: 1rem;
     }
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
