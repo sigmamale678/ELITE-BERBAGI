@@ -1,13 +1,14 @@
 /* Resetting default margins and paddings */
 * {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
 /* Body styling */
 body {
     text-align: center;
     font-family: 'Hammersmith One', sans-serif;
+    background-image: url(./assets/wallpaperterbaru.jpg);
     color: #fff;
     line-height: 1.6;
     animation: fadeIn 1s ease-in;
