@@ -8,6 +8,7 @@
 body {
     text-align: center;
     font-family: 'Hammersmith One', sans-serif;
+    background-image: url(/assets/menu4.jpg);
     color: #fff;
     line-height: 1.6;
     animation: fadeIn 1s ease-in;
@@ -122,34 +123,40 @@ body.modal-open {
     }
 }
 
-/* Button styling */ 
-#clickButton { 
-    position: relative; z-index: 2; 
-}
-#floatingVideo { 
-    position: absolute; top: 65%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 40vw; 
-    max-width: 300px; z-index: 3; 
-    pointer-events: none; 
+/* Button styling */
+#clickButton {
+    position: relative;
+    z-index: 2;
 }
 
-/* Responsive video */ 
-@media (max-width: 768px) { 
-    #floatingVideo { 
-        width: 50vw; 
-        max-width: 250px; 
-        top: 64%; 
+#floatingVideo {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    max-width: 300px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Responsive video */
+@media (max-width: 768px) {
+    #floatingVideo {
+        width: 50vw;
+        max-width: 250px;
+        top: 64%;
     }
-
-@media (max-width: 480px) { 
-    #floatingVideo { 
-        width: 60vw; 
-        max-width: 200px; 
-        top: 70%; 
-    } 
 }
+
+@media (max-width: 480px) {
+    #floatingVideo {
+        width: 60vw;
+        max-width: 200px;
+        top: 70%;
+    }
+}
+
 /* Back button styling */
 .back-button {
     position: fixed;
