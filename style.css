@@ -159,6 +159,9 @@ body.modal-open {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 50px; /* Jarak dari video */
+    display: block;
+    margin: auto;
+    position: relative;
 }
 
 /* Responsive video */
