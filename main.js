@@ -48,16 +48,3 @@ function refreshCountdowns() {
 refreshCountdowns();
 setInterval(refreshCountdowns, 1000);
 
-
-function resizeVideo() {
-    let button = document.getElementById("clickButton");
-    let video = document.getElementById("floatingVideo");
-
-    // Menyesuaikan ukuran video sesuai dengan button
-    video.style.width = button.offsetWidth + "px";
-    video.style.height = button.offsetHeight + "px";
-}
-
-// Panggil fungsi saat halaman dimuat dan saat ukuran layar berubah
-window.onload = resizeVideo;
-window.onresize = resizeVideo;
