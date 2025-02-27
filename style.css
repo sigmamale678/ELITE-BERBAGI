@@ -18,12 +18,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
-.container {
-    width: 100%;
-    text-align: center;
-}
-
 /* Heading animations */
 h2, h3 {
     opacity: 0;
