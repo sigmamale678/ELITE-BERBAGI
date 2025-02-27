@@ -154,6 +154,7 @@ body.modal-open {
     margin-top: 50px; /* Jarak dari video */
     display: block;
     margin: auto;
+    position: relative;
     
 }
 
