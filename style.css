@@ -159,7 +159,8 @@ body.modal-open {
     max-width: 100px;
     z-index: 1;
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 1;
+    display: block;
 }
 
 /* Responsiveness */
