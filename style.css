@@ -47,7 +47,7 @@ h3 {
 
 /* Image animations */
 img {
-    width: 355px;
+    width: 100vh;
     opacity: 0;
     animation: bounceIn 1s forwards;
     animation-delay: 1.5s;
