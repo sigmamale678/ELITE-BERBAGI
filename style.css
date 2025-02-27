@@ -165,7 +165,7 @@ body.modal-open {
 /* Responsiveness */
 @media (max-width: 768px) {
     #floatingVideo {
-        width: 200px;
+        width: 200;
     }
     
     #clickButton {
@@ -176,7 +176,7 @@ body.modal-open {
 
 @media (max-width: 480px) {
     #floatingVideo {
-        width: 150px;
+        width: 200;
     }
     
     #clickButton {
