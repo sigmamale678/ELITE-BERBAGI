@@ -163,7 +163,7 @@ body.modal-open {
 }
 
 /* Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 768) {
     #floatingVideo {
         width: 200;
     }
@@ -174,7 +174,7 @@ body.modal-open {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480) {
     #floatingVideo {
         width: 200;
     }
