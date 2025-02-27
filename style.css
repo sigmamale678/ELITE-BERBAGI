@@ -123,18 +123,18 @@ body.modal-open {
     }
 }
 
-/* Button dan Floating Video Wrapper */
+/* Wrapper untuk button dan video agar tetap dalam satu area */
 #buttonWrapper {
     position: relative;
     display: inline-block;
     text-align: center;
 }
 
-/* Button Styling */
+/* Styling Button */
 #clickButton {
     position: relative;
-    z-index: 2;
-    padding: 10px 20px;
+    z-index: 2; /* Tetap di atas */
+    padding: 12px 24px;
     background-color: #555;
     color: white;
     border: none;
@@ -148,44 +148,41 @@ body.modal-open {
     background-color: #777;
 }
 
-/* Floating Video */
+/* Floating Video - memastikan tetap terlihat */
 #floatingVideo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    max-width: 100px;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 1;
-    display: block;
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Di bawah tombol */
+    pointer-events: none; /* Agar tombol tetap bisa diklik */
+    opacity: 1; /* Pastikan terlihat */
+    display: block; /* Pastikan tidak tersembunyi */
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
     #floatingVideo {
-        width: 60px;
-        height: 60px;
+        width: 80px;
     }
     
     #clickButton {
         font-size: 14px;
-        padding: 8px 16px;
+        padding: 10px 20px;
     }
 }
 
 @media (max-width: 480px) {
     #floatingVideo {
-        width: 50px;
-        height: 50px;
+        width: 60px;
     }
     
     #clickButton {
         font-size: 12px;
-        padding: 6px 12px;
-    }
+        padding: 8px 16px;
+    }
 }
 
 /* Back button styling */
