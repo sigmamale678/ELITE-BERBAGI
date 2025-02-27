@@ -133,7 +133,7 @@ body.modal-open {
 /* Styling Button */
 #clickButton {
     position: relative;
-    z-index: 2; /* Tetap di atas */
+    z-index: 2; /* Tetap di bawah */
     padding: 12px 24px;
     background-color: #555;
     color: white;
@@ -156,7 +156,7 @@ body.modal-open {
     transform: translate(-50%, -50%);
     width: 100px;
     height: auto;
-    z-index: 1; /* Di bawah tombol */
+    z-index: 3; /* Di atas tombol */
     pointer-events: none; /* Agar tombol tetap bisa diklik */
     opacity: 1; /* Pastikan terlihat */
     display: block; /* Pastikan tidak tersembunyi */
