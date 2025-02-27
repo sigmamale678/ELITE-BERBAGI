@@ -1,9 +1,7 @@
-
 /* Resetting default margins and paddings */
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* Body styling */
@@ -26,6 +24,7 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
 /* Heading animations */
 h2, h3 {
     opacity: 0;
@@ -163,7 +162,6 @@ body.modal-open {
     display: block;
     margin: auto;
     position: relative;
-    
 }
 
 /* Responsive video */
