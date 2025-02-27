@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ini penting untuk mencegah elemen lebih besar dari layar */
 }
 
 /* Body styling */
