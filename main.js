@@ -1,3 +1,4 @@
+
 window.addEventListener('load', function() {
     document.querySelector('.container').style.animation = 'fadeInUp 1s forwards';
 });
@@ -19,7 +20,7 @@ function toggleAudio() {
 
 document.addEventListener('click', function() {
     document.querySelector('audio').play();
-}, { once: true });
+}, { once: true });
 
 
 function updateCountdown(targetDate, elementId) {
@@ -47,4 +48,3 @@ function refreshCountdowns() {
 
 refreshCountdowns();
 setInterval(refreshCountdowns, 1000);
-
