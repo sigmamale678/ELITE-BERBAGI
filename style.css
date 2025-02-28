@@ -9,7 +9,17 @@ body{
     font-family: "Hammersmith One", serif !important;
     color: white !important;
     background-image: url(./assets/bgweb1.png);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
+
+.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
 
 #clickButton {
     animation: pulse 1.5s infinite;
