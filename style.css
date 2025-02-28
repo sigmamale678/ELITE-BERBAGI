@@ -79,7 +79,7 @@ p {
     to { transform: translateY(0); opacity: 1; }
 }
 
-.footer-container.container-fluid {
+.footer-container {
     background-color: rgb(255, 140, 0);
     position: static;
     bottom: 0;
