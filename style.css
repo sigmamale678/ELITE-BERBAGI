@@ -81,7 +81,7 @@ p {
 
 .footer-container {
     background-color: rgb(255, 140, 0);
-    position: static;
+    position: fixed;
     bottom: 0;
     width: 100vw;
     padding: 10px 0;
