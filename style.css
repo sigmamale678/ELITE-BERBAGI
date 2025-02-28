@@ -11,13 +11,6 @@ body{
     background-image: url(./assets/bgweb1.png);
 }
 
-.container {
-    max-width: 100%;
-    padding: 0;
-    margin: 0 auto;
-}
-
-
 #clickButton {
     animation: pulse 1.5s infinite;
 }
