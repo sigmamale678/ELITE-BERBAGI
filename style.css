@@ -86,7 +86,7 @@ p {
     left: 0; /* Pastikan nempel ke kiri */
     right: 0; /* Pastikan nempel ke kanan */
     max-width: 100%;
-    width: 100vw;
+    width: 100%;
     padding: 10px 0;
     overflow: hidden;
     white-space: nowrap;
