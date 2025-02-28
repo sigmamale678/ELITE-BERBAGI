@@ -89,8 +89,7 @@ p {
     overflow: hidden;
     white-space: nowrap;
     font-size: large;
-    left: 50%;
-    transform: translateX(-50%); /* Memastikan footer benar-benar di tengah */
+    left: 60%;
 }
 .marquee {
     display: inline-block;
