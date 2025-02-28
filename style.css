@@ -83,6 +83,7 @@ p {
     background-color: rgb(255, 140, 0);
     position: fixed;
     bottom: 0;
+    max-width: 100%;
     width: 100vw;
     padding: 10px 0;
     overflow: hidden;
