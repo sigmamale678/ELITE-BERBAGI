@@ -203,29 +203,6 @@ p {
     to { transform: translateY(0); opacity: 1; }
 }
 
-.footer-container {
-    background-color: rgb(255, 140, 0);
-    position: static;
-    bottom: 0;
-    max-width: 100%;
-    width: 100%;
-    padding: 10px 0;
-    white-space: nowrap;
-    font-size: large;
-.marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
-}
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 #back-button {
     position: fixed;
     width: 50px;
