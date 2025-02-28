@@ -89,7 +89,7 @@ p {
     overflow: hidden;
     white-space: nowrap;
     font-size: large;
-    margin-left: calc(-100vw + 100%)
+    margin-left: calc(-25vw + 25%)
 }
 .marquee {
     display: inline-block;
