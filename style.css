@@ -11,6 +11,130 @@ body{
     background-image: url(./assets/bgweb1.png);
 }
 
+.{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center !important;
+    font-family: "Hammersmith One", serif !important;
+    color: white !important;
+    background-image: url(./assets/bgweb1.png);
+}
+
+#clickButton {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+      .carousel-inner .carousel-item img,
+      img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        width: 100%;
+        opacity: 0;
+        animation: bounceIn 1s forwards;
+        animation-delay: 1.5s;
+        transition: transform 1s ease-in-out;
+      }
+
+      /* Heading animations */
+h2, h3 {
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+h2:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+h3 {
+    animation-delay: 1s;
+}
+
+/* Paragraph animations */
+p {
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+    text-justify: inter-word;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.footer-container {
+    background-color: rgb(255, 140, 0);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: large;
+}
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#back-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000; /* Agar tetap di atas konten */
+}
+
+#back-button {
+    left: 20px;
+    bottom: 20px;
+}
+
 #clickButton {
     animation: pulse 1.5s infinite;
 }
